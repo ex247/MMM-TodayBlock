@@ -1,0 +1,39 @@
+.today-block {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 16px;
+}
+
+.today-header {
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  opacity: 0.6;
+  margin-bottom: 4px;
+}
+
+.no-events {
+  opacity: 0.5;
+}
+
+.event-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.event-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.event-time {
+  min-width: 70px;
+  opacity: 0.7;
+}
+
+.event-title {
+  flex: 1;
+}
