@@ -1,17 +1,23 @@
 {
   "name": "mmm-todayblock",
   "version": "1.0.0",
-  "description": "MagicMirror module to display today's calendar events in a clean block",
+  "description": "A MagicMirror² module to display today's calendar events in a clean block",
   "main": "MMM-TodayBlock.js",
-  "scripts": {
-    "start": "echo \"Run within MagicMirror\""
-  },
+  "author": "ex247",
+  "license": "MIT",
   "keywords": [
     "magicmirror",
+    "magicmirror-module",
     "calendar",
     "today",
-    "module"
+    "display"
   ],
-  "author": "Your Name",
-  "license": "MIT"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ex247/MMM-TodayBlock.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ex247/MMM-TodayBlock/issues"
+  },
+  "homepage": "https://github.com/ex247/MMM-TodayBlock#readme",
 }
