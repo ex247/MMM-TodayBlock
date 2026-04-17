@@ -5,7 +5,8 @@ Module.register("MMM-TodayBlock", {
     showAllDay: true,
     colored: true,
     showHeader: true,
-    headerText: "Today"
+    headerText: "Today",
+    showLocation: false
   },
 
   start() {
@@ -76,6 +77,16 @@ Module.register("MMM-TodayBlock", {
       row.appendChild(dot);
       row.appendChild(time);
       row.appendChild(title);
+
+      if (this.config.showLocation && event.location) {
+        const location = document.createElement("span");
+        location.className = "event-location";
+
+        const shortLocation = event.location.split(",")[0]; // optional trim
+        location.innerHTML = `📍 ${shortLocation}`;
+
+        row.appendChild(location);
+      }
 
       wrapper.appendChild(row);
     });

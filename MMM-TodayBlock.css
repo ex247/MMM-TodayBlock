@@ -37,3 +37,14 @@
 .event-title {
   flex: 1;
 }
+
+.event-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.event-location {
+  font-size: 12px;
+  opacity: 0.5;
+  margin-left: 10px;
+}

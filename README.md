@@ -6,7 +6,7 @@ A MagicMirror² module that displays **today's calendar events** in a clean, min
 
 ## ✨ Features
 
-- Shows only today's events
+- Shows only today's events with optional location
 - Combines all configured calendars automatically
 - Color-coded events (matches calendar colors)
 - Clean, minimal layout
@@ -49,7 +49,8 @@ Add the following to your `config.js`:
     timeFormat: "h:mm A",
     showAllDay: true,
     showHeader: true,
-    headerText: "Today"
+    headerText: "Today",
+    showLocation: true,
   }
 }
 ```
@@ -65,6 +66,7 @@ Add the following to your `config.js`:
 | showAllDay   | true     | Show "All Day" label for full-day events |
 | showHeader   | true     | Show header text |
 | headerText   | Today    | Header label text |
+| showLocation | false    | Show event location in block |
 
 ---
 
@@ -105,15 +107,16 @@ Key CSS classes:
 - event-dot
 - event-time
 - event-title
+- event-location
 
 ---
 
 ## 🚀 Example Layout
 
 TODAY  
-● 9:00 AM   Team Standup  
-● 12:00 PM  Lunch  
-● 3:00 PM   Dentist  
+● 9:00 AM   Team Standup  📍 Teams Meeting
+● 12:00 PM  Lunch  📍 Palace Place, Anaheim, CA
+● 3:00 PM   Dentist  📍 Dr. Doe Dental, San Jose, CA
 
 ---
 
